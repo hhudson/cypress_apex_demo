@@ -15,7 +15,7 @@ context("login page tests", () => {
     var passWord = Cypress.env("password");
     cy.get("#P101_PASSWORD").type(passWord, { log: false });
     cy.get("#P101_LOGIN").click();
-    cy.url().should("contain", "197:2");
+    cy.url().should("contain", "197:1");
     cy.get(".t-HeroRegion-title").should(
       "contain",
       "Sample Database Application"
